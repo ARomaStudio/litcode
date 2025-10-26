@@ -6,7 +6,7 @@ public class ReverseInteger {
         boolean isNegative = x<0;
         String s = String.valueOf(Math.abs(x));
         char[] a = s.toCharArray();
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for (int i = a.length - 1; i >= 0; i--) {
             sb.append(a[i]);
         }

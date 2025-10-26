@@ -25,8 +25,8 @@ public class AtoiStringConversion {
         if (chars[0] == '-') {
             isNegative = true;
         }
-        s = s.replaceAll("\\+", "");
-        s = s.replaceAll("-", "");
+        s = s.replace("\\+", "");
+        s = s.replace("-", "");
         chars = s.toCharArray();
         for (char c : chars) {
             if (Character.isDigit(c)) {
@@ -42,7 +42,7 @@ public class AtoiStringConversion {
                 return INT_MIN;
             }
         }
-        if (sb.toString().isEmpty()) {
+        if (sb.isEmpty()) {
             return 0;
         }
         try {
